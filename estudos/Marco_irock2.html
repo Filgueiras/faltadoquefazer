@@ -1,0 +1,59 @@
+<html>
+	<head>
+    <title>iRock - A Rocha virtual de estima&ccedil;&atilde;o</title>
+	<link type="text/css" rel="stylesheet" href="../css/iRockMafg.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="../icon/BugsIcon16.gif" />
+	<script type="text/javascript" src="../scripts/pedraMarco.js"></script>
+	</head>
+
+	<body onload="inicializaPedra();" onresize="redimensionaPedra();">
+    <h1>Adote sua pedra aqui...
+		<a href="../index.html" title="Voltar">
+	<img src="../img/FaltaDoQueFazer_BugVoltar.png" title="Voltar" alt="Volte para o in&iacute;io" width="61px" height="75px" />
+	</a>
+	</h1>
+	
+	<div id="coisasdapedra" style="margin-top:100px; text-align:center; float:left;">
+      <img id="rockImg" src="../img/rockAlpha.png" alt="iRock - clique aqui!" style="cursor:pointer" title="Clique em mim que eu fico feliz!"
+	   onclick="cutucaPedra();" />
+    </div>
+	
+	<div style="margin-top:50px; text-align:right; float:right;">
+	  <fieldset>
+	  <legend>Painel da Pedra</legend>
+	  <table>
+	  <tr><td>&Uacute;ltimo evento</td><td><input type="text" name="evento" id="evento" value="00:00:00" maxlength="20" readonly="readonly"/></td></tr>
+	  <tr><td>Temporizador</td><td><input type="text" name="contador" id="contador" value="00:00:00" readonly="readonly"/></td></tr>
+	  <tr><td>Seu nome</td><td><input type="text" name="nomeDono" id="nomeDono" value="???" readonly="readonly"/></td></tr>
+	  <tr><td>Humor da pedra</td><td><input type="text" name="humor" id="humor" value="(...)" readonly="readonly"/></td></tr>
+	  <tr><td>Cafunés</td><td><input type="text" name="cafune" id="cafune" value="0" readonly="readonly"/></td></tr>
+	  <tr><td>Carente</td><td><input type="text" name="carencia" id="carencia" value="0" readonly="readonly"/></td></tr>
+	  </table>
+	  </fieldset>
+
+	  <fieldset>
+	  <legend>Configura&ccedil;es da Pedra</legend>
+	  <table>
+	  <tr><td>Tempo base dos<br />eventos (seg)</td><td><input type="text" name="espera" id="espera" value="30" maxlength="3" onchange="setTempoBase();"/></td></tr>
+  	  <tr><td>Qtd Carência para<br />ficar emburrada</td><td><input type="text" name="limiteBrava" id="limiteBrava" value="5" maxlength="2" onchange="setLimiteCarencia();"/></td></tr>
+	  <tr><td>Grava Cookie ?</td><td>
+	  <input type="radio" name="podeCookie" id="podeCookieS" value="sim" onclick="alteraCookie(1)"/>Sim<br />
+	  <input type="radio" name="podeCookie" id="podeCookieN" value="nao" onclick="alteraCookie(0)"/>N&atilde;o
+	  </td></tr>
+	  </table>
+	  </fieldset>
+
+  	  <fieldset>
+	  <legend>Fa&ccedil;a a Pedra te esquecer...</legend>
+	  <table>
+	  <tr><td ><button type="button" onclick="esquecerDeMim();">Cansei dessa pedra chata!</button></td></tr>
+	  </table>
+	  </fieldset>
+	  </div>
+	  
+	  <footer id="rodapeh">
+	  Fale com a gente ! Mande e-mail para contato@faltadoquefazer.com.br
+	  </footer>
+	</body>
+
+</html>

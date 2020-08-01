@@ -1,0 +1,69 @@
+<!-- Pra ser XHTML eu mudo coisas aqui... -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- E insiro alguns detalhes à tag html... e tudo em minúsculas ! -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>iRock - A Rocha virtual de estima&ccedil;&atilde;o</title>
+	<link type="text/css" rel="stylesheet" href="../css/iRockMafg2.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="../icon/BugsIcon16.gif" />
+	<script type="text/javascript" src="../scripts/pedraMarco.js"></script>
+	</head>
+
+	<body>
+	
+	<div id="conteudo">
+    <header>
+	<div>
+	<a id="voltar" href="../index.html" title="Voltar">
+	<img src="../img/FaltaDoQueFazer_BugVoltar.png" title="Voltar" alt="Volte para o in&iacute;io" width="60px" height="75px" /></a>
+	</div>
+	<h1>Adote sua pedra aqui...</h1>
+	</header>
+	
+	<pedra>
+      <img id="rockImg" src="../img/rockAlpha.png" alt="iRock - clique aqui!" title="Clique em mim que eu fico feliz!" />
+	</pedra>
+	
+	<aside>
+	  <fieldset>
+	  <legend>Painel da Pedra</legend>
+	  <table>
+	  <tr><td>&Uacute;ltimo evento</td><td><input type="text" name="evento" id="evento" value="00:00:00" maxlength="20" readonly="readonly"/></td></tr>
+	  <tr><td>Temporizador</td><td><input type="text" name="contador" id="contador" value="00:00:00" readonly="readonly"/></td></tr>
+	  <tr><td>Seu nome</td><td><input type="text" name="nomeDono" id="nomeDono" value="???" readonly="readonly"/></td></tr>
+	  <tr><td>Humor da pedra</td><td><input type="text" name="humor" id="humor" value="(...)" readonly="readonly"/></td></tr>
+	  <tr><td>Cafunés</td><td><input type="text" name="cafune" id="cafune" value="0" readonly="readonly"/></td></tr>
+	  <tr><td>Carente</td><td><input type="text" name="carencia" id="carencia" value="0" readonly="readonly"/></td></tr>
+	  </table>
+	  </fieldset>
+
+	  <fieldset>
+	  <legend>Configura&ccedil;es da Pedra</legend>
+	  <table>
+	  <tr><td>Tempo base mudar<br />humor (seg)</td><td><input type="text" name="espera" id="espera" value="" maxlength="3"/></td></tr>
+  	  <tr><td>Quantos 'Carente'<br />deixam <q>brava</q></td><td><input type="text" name="limiteBrava" id="limiteBrava" value="" maxlength="2"/></td></tr>
+	  <!--tr><td>Grava Cookie ?</td><td>
+	  <input type="radio" name="podeCookie" id="podeCookieS" value="sim" onclick="alteraCookie(1)"/>Sim<br />
+	  <input type="radio" name="podeCookie" id="podeCookieN" value="nao" onclick="alteraCookie(0)"/>N&atilde;o
+	  </td></tr-->
+	  </table>
+	  </fieldset>
+
+  	  <fieldset>
+	  <legend>Fa&ccedil;a a Pedra te esquecer...</legend>
+	  <table>
+	  <tr><td ><button type="button" id="esquecer">Cansei dessa pedra chata!</button></td></tr>
+	  </table>
+	  </fieldset>
+	  </aside>
+	  
+	  <footer>
+	  Fale com a gente ! Mande e-mail para contato@faltadoquefazer.com.br
+	  </footer>
+	  </div>
+	  
+	</body>
+
+</html>

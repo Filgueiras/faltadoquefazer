@@ -1,0 +1,141 @@
+/*----------------------------------------
+   selector{declaration;[declaration2;]}
+   id selector: #idname{};
+   class selector: .classname{};
+   color RGB: R:red, G:green, B:blue) hex: #RRGGBB ou rgb(0,255,0)
+----------------------------------------*/
+
+body {
+	    background-color: #d2b48c; /*(13*16+2,11*16+4,8*16+12)*/
+		margin-left: 10%;
+		margin-right: 10%;
+		border: 2px dotted gray;
+		padding: 0px 5px 5px 5px; /* alto, dir, baixo, esq: sentido horário...*/
+		font-family: arial, sans-serif;
+		font-size: medium; /*algo tipo 14px*/
+	  }
+
+h1, h2, h3, h4 {
+  font-family:  verdana, geneva, sans-serif;
+  color:        rgb(102,51,51);
+  /*espaço entre as linhas*/
+  line-height: 1.2em /*em: medida que faz N vezes o tamanho da fonte*/ 
+}
+
+a img{ 
+	cursor: pointer;
+	border: 0;
+}
+
+
+h1 {
+  border-bottom: 2px solid rgb(102,51,51);
+  font-size: 120%; /* 14px * 120% */
+}
+
+h4{
+  font-size:  105%;
+  font-weight: bold;
+  line-height: 1;
+}
+
+p , li{
+  color:      rgb(51,51,0);
+}
+
+p.version {
+  color:      rgb(128,0,0); /*maroon;*/
+  font-style: italic;
+  font-size:  60%;
+}
+
+a.linkMenor{
+font-size: 80%;
+line-height: 0.5em /*em: medida que faz N vezes o tamanho da fonte*/ 
+}
+
+a:link{
+color: blue;
+}
+
+a:visited{
+color: rgb(99,99,99);
+}
+
+a:hover{
+color: red;
+}
+
+span.autor{
+   font-weight: bold;
+}
+
+#RockImg{
+	float: right;
+}
+
+#intro{
+   color:      rgb(51,51,0);
+}
+
+#AndreRieu{
+ border-color: black;
+ border-width: 1px;
+ border-style: solid;
+ background-color: #a7c4d2;
+ padding: 10px;
+ margin-left: 5px;
+ color: rgb(102,51,51);
+ width: 400px;
+ line-height: 1;
+ text-align: left;
+ float: right;
+}
+
+#buglink{
+float: left;
+}
+
+#critica{
+ border-color: black;
+ border-width: 1px;
+ border-style: dotted;
+ background-color: #b7d4f2;
+ padding: 10px;
+ color: rgb(102,51,51);
+ width: 380px;
+ line-height: 1;
+ text-align: center;
+}
+
+#flashbug{
+float: left;
+}
+
+#rodapeh{
+  border-top: 2px solid rgb(102,51,51);
+  color:      rgb(20,20,20);
+  font-size:  60%;
+}
+
+#altabooks, #altabooks2{
+	float: left;
+}
+
+#perldeitel{
+	float: left;
+}
+/*
+http://www.w3schools.com/cssref/css_websafe_fonts.asp
+http://www.w3schools.com/cssref/css_colornames.asp
+RGBA color values are supported in IE9+, Firefox 3+, Chrome, Safari, and in Opera 10+. (rgb + alpha, de 0.0 a 1.0, que é opaco)
+
+Livro Html: 
+padding: top right bottom left;
+margin: idem
+border: width style color; (any order)
+background: color image repeat
+font: [style variant weight] size[/height] family1,family2,familyN...;
+
+
+*/

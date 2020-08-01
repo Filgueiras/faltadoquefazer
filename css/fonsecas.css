@@ -1,0 +1,78 @@
+/*----------------------------------------
+   selector{declaration;[declaration2;]}
+   id selector: #idname{};
+   class selector: .classname{};
+   color RGB: R:red, G:green, B:blue) hex: #RRGGBB ou rgb(0,255,0)
+----------------------------------------*/
+
+table {
+	margin-left: 20px;
+	margin-right: 20px;
+	border: thin solid black;
+	caption-side: top;
+	border-spacing: 0px;
+	border-collapse: collapse; /*por causa do maldito IE*/
+	font-weight: 150;
+	font-family: arial, sans-serif;
+	font-size: small;
+	text-align: left;
+	background-color: #dddddd;
+	}
+
+td, th{
+	border: thin dotted gray;
+	font-weight: normal;
+	padding: 5px;
+}
+
+th{
+	text-align: center;
+	font-weight: bold;
+	
+}
+
+tr.titulo th{
+	border-bottom: thin solid black;
+	background-color: #999999;
+}
+
+tr.fimgeracao td{
+	border-bottom: thin solid black;
+}
+
+td.span{
+	border-bottom: thin solid black;
+}
+
+caption{
+	font-style: italic;
+	padding-top: 10px;
+}
+
+.central{
+	text-align: center;
+}
+
+.direita{
+	text-align: right;
+}
+
+#fonsecabrasao{
+float: left;
+margin-right: 10px;
+}
+
+/*
+http://www.w3schools.com/cssref/css_websafe_fonts.asp
+http://www.w3schools.com/cssref/css_colornames.asp
+RGBA color values are supported in IE9+, Firefox 3+, Chrome, Safari, and in Opera 10+. (rgb + alpha, de 0.0 a 1.0, que é opaco)
+
+Livro Html: 
+padding: top right bottom left;
+margin: idem
+border: width style color; (any order)
+background: color image repeat
+font: [style variant weight] size[/height] family1,family2,familyN...;
+
+
+*/

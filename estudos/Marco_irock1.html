@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>iRock - A Rocha virutal de estima&ccedil;&atilde;o</title>
+	
+	<script type="text/javascript">
+
+	function displayDate() {
+	document.getElementById("hora").innerHTML=Date();
+	}
+		
+	function cutucaPedra(){
+	var texto = "Qual é o seu nome ?"
+	var texto2 = ". Estava sozinha na Web, agora não estou mais..."
+	var seuNome = prompt( texto, "Escreva seu nome aqui!");
+	if (seuNome) {
+		alert("Olá, " + seuNome + texto2);
+		document.getElementById("rockImg").src = "../img/rock_happy.png";
+	}
+	}
+	
+	</script>
+  </head>
+
+  <body onload="alert('Ol&aacute;, eu sou a sua rocha de estima&ccedil;&atilde;o.');">
+    <h1>Aten&ccedil;&atilde;o a todos: g&ecirc;nio estudando, rsrsrsrs...
+		<a href="../index.html" title="Voltar">
+	<img src="../img/FaltaDoQueFazer_BugVoltar.png" title="Voltar" alt="Volte para o in&iacute;io" width="61px" height="75px" />
+	</a>
+	</h1>
+	
+	<p id="hora">Crian&ccedil;as, que dia &eacute; hoje ?</p>
+	<button type="button" onclick="displayDate()">Crian&ccedil;as respondendo!</button>
+	
+	<div style="margin-top:100px; text-align:center">
+      <img id="rockImg" src="../img/rock.png" alt="iRock - clique aqui!" style="cursor:pointer" title="Clique mim que eu fico feliz!"
+	   onclick="cutucaPedra()" />
+    </div>
+	
+  </body>
+</html>
